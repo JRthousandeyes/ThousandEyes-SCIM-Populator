@@ -18,5 +18,5 @@ https://docs.thousandeyes.com/product-documentation/user-management/thousandeyes
 
 # Sample Output:
 
-![alt text](https://github.com/collinsullivanhub/ThousandEyes-SCIM-Populator/blob/main/Screen%20Shot%202021-02-18%20at%201.41.44%20PM.png)
+![alt text](https://github.com/collinsullivanhub/ThousandEyes-SCIM-Populator/blob/main/Screen%20Shot%202021-02-18%20at%201.47.45%20PM.png)
 
