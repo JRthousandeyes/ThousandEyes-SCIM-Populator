@@ -48,7 +48,7 @@ def add_user_scim(usernames, emails):
     for x, y in zip(usernames, emails):
         scim_data = {'name': f'{x}', 'email': f'{y}'}
         post_request = requests.post(url, data = scim_data)
-        print(f"Added user {x} with email {y} to ThousaandEyes platform.")
+        print(f"Added user {x} with email {y} to ThousandEyes platform.")
         print(post_request)
 
 
