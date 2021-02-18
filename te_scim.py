@@ -3,6 +3,7 @@ import sys
 import requests
 import json
 import csv
+import re
 #import pyinputplus as pyip
 
 '''
@@ -29,19 +30,32 @@ def scan_csv(csv_file):
                 usernames.append(row[0])
                 emails.append(row[1])
                 line_count += 1
+        print("\n")
 
 
-def add_user_scim(username, token, usernames, emails):
+def validate_emails():
+    email_format_regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
+    for email_address in emails:
+        if(re.search(email_format_regex, email_address)):
+            print(f"SCIM Email validated: {email_address}")
+        else:
+            print(f"SCIM Email not in proper format: {email_address}")
+    print("\n")
+
+
+def add_user_scim(usernames, emails):
     url = f'https://{username}:{token}@api.thousandeyes.com/scim/v2'
-    scim_data = {'name': f'{x}', 'email': f'{y}'}
-    x = requests.post(url, data = scim_data)
+    for x, y in zip(usernames, emails):
+        scim_data = {'name': f'{x}', 'email': f'{y}'}
+        post_request = requests.post(url, data = scim_data)
+        print(f"Added user {x} with email {y} to ThousaandEyes platform.")
+        print(post_request)
 
 
 if __name__ == '__main__':
 
-    #email_input = pyip.inputEmail()
-    username = "wsullivan+scim@thousandeyes.com"
-    token = 'fzgiddp0rmyoozbwy2fxypdsk5t7fpei'
+    username = "enter your admin TE email here"
+    token = 'enter your token here'
 
     global usernames
     global emails
@@ -50,6 +64,6 @@ if __name__ == '__main__':
 
     csv_file_input = input("Please enter csv file: ")
     scan_csv(csv_file_input)
-    print("List validation:")
-    print(usernames)
-    print(emails)
+    print("Email validation:")
+    validate_emails()
+    add_user_scim(usernames, emails)
