@@ -18,18 +18,5 @@ https://docs.thousandeyes.com/product-documentation/user-management/thousandeyes
 
 # Sample Output:
 
-CSV column name verification: Name, Email
+![alt text](https://github.com/collinsullivanhub/ThousandEyes-SCIM-Populator/blob/main/Screen%20Shot%202021-02-18%20at%201.41.44%20PM.png)
 
-Username: Michael Batchelder Email: binkytestemail123@gmail.com
-Username: Jeremiah Ross Email: jrtestemail123@gmail.com
-Username: Chris Rodgers Email: christestemail123@gmail.com
-
-Email validation:
-SCIM Email validated: binkytestemail123@gmail.com
-SCIM Email validated: jrtestemail123@gmail.com
-SCIM Email validated: christestemail123@gmail.com
-
-Added user Michael Batchelder with email binkytestemail123@gmail.com to ThousaandEyes platform.
-Added user Jeremiah Ross with email jrtestemail123@gmail.com to ThousaandEyes platform.
-Added user Chris Rodgers with email christestemail123@gmail.com to ThousaandEyes platform.
-.
