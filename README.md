@@ -18,7 +18,7 @@ https://docs.thousandeyes.com/product-documentation/user-management/thousandeyes
 
 # Sample Output:
 
-CSV column name verification: ﻿Name, Email
+CSV column name verification: Name, Email
 
 Username: Michael Batchelder Email: binkytestemail123@gmail.com
 Username: Jeremiah Ross Email: jrtestemail123@gmail.com
