@@ -32,3 +32,4 @@ SCIM Email validated: christestemail123@gmail.com
 Added user Michael Batchelder with email binkytestemail123@gmail.com to ThousaandEyes platform.
 Added user Jeremiah Ross with email jrtestemail123@gmail.com to ThousaandEyes platform.
 Added user Chris Rodgers with email christestemail123@gmail.com to ThousaandEyes platform.
+.
